@@ -1,156 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset-styles.css"/>
-    <link rel="stylesheet" href="styles.css"/>
-    <title>Сайтик</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/reset-styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/styles.css"
+    />
+    <title>SolarLab / Доска объявлений 2023</title>
+  </head>
+  <body>
     <header class="header">
-        <div class="black-header">
-            <div class="center-head-btns">
-                <div class="head-btns">
-                    <button class="sign-in-btn">Войти</button>
-                    <button class="new-advert-btn">Новое объявление</button>
-                </div>
-            </div>
+      <div class="header__login-panel">
+        <div class="header__login-panel__subheader">
+          <div class="header__login-panel__subheader__sign-in">
+            <img
+              alt="person"
+              src="./public/images/svg/person.svg"
+              width="20px"
+              height="20px"
+            />
+            <button class="header__login-panel__subheader__sign-in__btn">Войти</button>
+          </div>
+          <button class="header__login-panel__subheader__new-advert-btn">
+            Новое объявление
+            <img
+              alt="add"
+              src="./public//images/svg/add.svg"
+              width="10px"
+              height="10px"
+            />
+          </button>
         </div>
-        <div class="ind-30"></div>
-        <div class="white-header">
-            <div class="text-1">Доска объявлений</div>
-            <div class="category-search">
-                <button class="all-cat-btn">Все категории</button>
-                <div class="search">
-                    <input type="text" placeholder="Поиск по объявлениям" class="search-adv" />
-                    <button class="search-btn">Найти</button>
-                </div>
-            </div>
+      </div>
+      <div class="header__subheader">
+        <div class="header__subheader__title">Доска объявлений</div>
+        <div class="header__subheader__categories-and-search">
+          <button class="header__subheader__categories-and-search__all-categories-btn">
+            <img
+              width="18px"
+              height="12px"
+              alt="list"
+              src="./public//images/svg/list.svg"
+            />
+            Все категории
+          </button>
+
+          <div class="header__subheader__categories-and-search__search">
+            <input
+              class="header__subheader__categories-and-search__search__input"
+              placeholder="Поиск по объявлениям"
+            />
+            <button class="header__subheader__categories-and-search__search__btn">
+              Найти
+              <img
+                alt="search"
+                src="./public//images//svg/search.svg"
+                width="16px"
+                height="16px"
+              />
+            </button>
+          </div>
         </div>
-        <div class="ind-30"></div>
+      </div>
     </header>
-    <!-- <main>
-        <div class="ind-40"></div>
-        <div class="text-2">Рекомендации для вас</div>
-        <div class="ind-30"></div>
-        <div class="ad-line">
-            <div class="ad-card">
-                <img src="./images/1.jpg" width="300" height="300" alt="Иллюстрация" vspace="5" hspace="5">
-                <div class="description">
-                    <div class="name-product">Котик красивый</div>
-                    <div class="cost">100 Р</div>
-                    <div class="address">Севастополь, площадь Лазарева</div>
-                    <div class="date">Сегодня 14:20</div>
-                </div>
-            </div>
-            <div class="ad-card">
-                <img src="./images/1.jpg" width="300" height="300" alt="Иллюстрация" vspace="5" hspace="5">
-                <div class="description">
-                    <div class="name-product">Котик красивый</div>
-                    <div class="cost">100 Р</div>
-                    <div class="address">Севастополь, площадь Лазарева</div>
-                    <div class="date">Сегодня 14:20</div>
-                </div>
-            </div>
-            <div class="ad-card">
-                <img src="./images/1.jpg" width="300" height="300" alt="Иллюстрация" vspace="5" hspace="5">
-                <div class="description">
-                    <div class="name-product">Котик красивый</div>
-                    <div class="cost">100 Р</div>
-                    <div class="address">Севастополь, площадь Лазарева</div>
-                    <div class="date">Сегодня 14:20</div>
-                </div>
-            </div>
-            <div class="ad-card">
-                <img src="./images/1.jpg" width="300" height="300" alt="Иллюстрация" vspace="5" hspace="5">
-                <div class="description">
-                    <div class="name-product">Котик красивый</div>
-                    <div class="cost">100 Р</div>
-                    <div class="address">Севастополь, площадь Лазарева</div>
-                    <div class="date">Сегодня 14:20</div>
-                </div>
-            </div>
+    <main>
+      <div class="recommendations-title">Рекомендации для вас</div>
+
+      <div class="announcements-list">
+        <!-- Evil copypaste downside  -->
+        <div class="announcements-list__announcement">
+          <div class="announcements-list__announcement__image">
+            <img
+              alt="announcement"
+              src="./public/images/png/image-sample-1.png"
+            />
+          </div>
+          <div class="announcements-list__announcement__info">
+            <div class="announcements-list__announcement__info__title">Гитара Fender</div>
+            <div class="announcements-list__announcement__info__price">20 000 &#8381;</div>
+            <div class="announcements-list__announcement__info__additional">Москва, Ленинский проспект</div>
+            <div class="announcements-list__announcement__info__additional">Сегодня 14:42</div>
+          </div>
         </div>
-        <div class="ind-40"></div>
-        <div class="ad-line">
-            <div class="ad-card">
-                <img src="./images/1.jpg" width="100" height="100" alt="Иллюстрация" vspace="5" hspace="5">
-                <div class="description">
-                    <div class="name-product">Котик красивый</div>
-                    <div class="cost">100 Р</div>
-                    <div class="address">Севастополь, площадь Лазарева</div>
-                    <div class="date">Сегодня 14:20</div>
-                </div>
-            </div>
-            <div class="ad-card">
-                <img src="./images/1.jpg" width="100" height="100" alt="Иллюстрация" vspace="5" hspace="5">
-                <div class="description">
-                    <div class="name-product">Котик красивый</div>
-                    <div class="cost">100 Р</div>
-                    <div class="address">Севастополь, площадь Лазарева</div>
-                    <div class="date">Сегодня 14:20</div>
-                </div>
-            </div>
-            <div class="ad-card">
-                <img src="./images/1.jpg" width="100" height="100" alt="Иллюстрация" vspace="5" hspace="5">
-                <div class="description">
-                    <div class="name-product">Котик красивый</div>
-                    <div class="cost">100 Р</div>
-                    <div class="address">Севастополь, площадь Лазарева</div>
-                    <div class="date">Сегодня 14:20</div>
-                </div>
-            </div>
-            <div class="ad-card">
-                <img src="./images/1.jpg" width="100" height="100" alt="Иллюстрация" vspace="5" hspace="5">
-                <div class="description">
-                    <div class="name-product">Котик красивый</div>
-                    <div class="cost">100 Р</div>
-                    <div class="address">Севастополь, площадь Лазарева</div>
-                    <div class="date">Сегодня 14:20</div>
-                </div>
-            </div>
+
+        <div class="announcements-list__announcement">
+          <div class="announcements-list__announcement__image">
+            <img
+              alt="announcement"
+              src="./public/images/png/image-sample-2.png"
+            />
+          </div>
+          <div class="announcements-list__announcement__info">
+            <div class="announcements-list__announcement__info__title">Гитара Fender</div>
+            <div class="announcements-list__announcement__info__price">20 000 &#8381;</div>
+            <div class="announcements-list__announcement__info__additional">Москва, Ленинский проспект</div>
+            <div class="announcements-list__announcement__info__additional">Сегодня 14:42</div>
+          </div>
         </div>
-        <div class="ind-40"></div>
-        <div class="ad-line">
-            <div class="ad-card">
-                <img src="./images/1.jpg" width="100" height="100" alt="Иллюстрация" vspace="5" hspace="5">
-                <div class="description">
-                    <div class="name-product">Котик красивый</div>
-                    <div class="cost">100 Р</div>
-                    <div class="address">Севастополь, площадь Лазарева</div>
-                    <div class="date">Сегодня 14:20</div>
-                </div>
-            </div>
-            <div class="ad-card">
-                <img src="./images/1.jpg" width="100" height="100" alt="Иллюстрация" vspace="5" hspace="5">
-                <div class="description">
-                    <div class="name-product">Котик красивый</div>
-                    <div class="cost">100 Р</div>
-                    <div class="address">Севастополь, площадь Лазарева</div>
-                    <div class="date">Сегодня 14:20</div>
-                </div>
-            </div>
-            <div class="ad-card">
-                <img src="./images/1.jpg" width="100" height="100" alt="Иллюстрация" vspace="5" hspace="5">
-                <div class="description">
-                    <div class="name-product">Котик красивый</div>
-                    <div class="cost">100 Р</div>
-                    <div class="address">Севастополь, площадь Лазарева</div>
-                    <div class="date">Сегодня 14:20</div>
-                </div>
-            </div>
-            <div class="ad-card">
-                <img src="./images/1.jpg" width="100" height="100" alt="Иллюстрация" vspace="5" hspace="5">
-                <div class="description">
-                    <div class="name-product">Котик красивый</div>
-                    <div class="cost">100 Р</div>
-                    <div class="address">Севастополь, площадь Лазарева</div>
-                    <div class="date">Сегодня 14:20</div>
-                </div>
-            </div>
+
+        <div class="announcements-list__announcement">
+          <div class="announcements-list__announcement__image">
+            <img
+              alt="announcement"
+              src="./public/images/png/image-sample-1.png"
+            />
+          </div>
+
+          <div class="announcements-list__announcement__info">
+            <div class="announcements-list__announcement__info__title">Гитара Fender</div>
+            <div class="announcements-list__announcement__info__price">20 000 &#8381;</div>
+            <div class="announcements-list__announcement__info__additional">Москва, Ленинский проспект</div>
+            <div class="announcements-list__announcement__info__additional">Сегодня 14:42</div>
+          </div>
         </div>
-        <div class="ind-70"></div>
-    </main> -->
-</body>
+
+        <div class="announcements-list__announcement">
+          <div class="announcements-list__announcement__image">
+            <img
+              alt="announcement"
+              src="./public/images/png/image-sample-2.png"
+            />
+          </div>
+
+          <div class="announcements-list__announcement__info">
+            <div class="announcements-list__announcement__info__title">Гитара Fender</div>
+            <div class="announcements-list__announcement__info__price">20 000 &#8381;</div>
+            <div class="announcements-list__announcement__info__additional">Москва, Ленинский проспект</div>
+            <div class="announcements-list__announcement__info__additional">Сегодня 14:42</div>
+          </div>
+        </div>
+
+        <div class="announcements-list__announcement">
+          <div class="announcements-list__announcement__image">
+            <img
+              alt="announcement"
+              src="./public/images/png/image-sample-1.png"
+            />
+          </div>
+
+          <div class="announcements-list__announcement__info">
+            <div class="announcements-list__announcement__info__title">Гитара Fender</div>
+            <div class="announcements-list__announcement__info__price">20 000 &#8381;</div>
+            <div class="announcements-list__announcement__info__additional">Москва, Ленинский проспект</div>
+            <div class="announcements-list__announcement__info__additional">Сегодня 14:42</div>
+          </div>
+        </div>
+
+        <div class="announcements-list__announcement">
+          <div class="announcements-list__announcement__image">
+            <img
+              alt="announcement"
+              src="./public/images/png/image-sample-2.png"
+            />
+          </div>
+
+          <div class="announcements-list__announcement__info">
+            <div class="announcements-list__announcement__info__title">Гитара Fender</div>
+            <div class="announcements-list__announcement__info__price">20 000 &#8381;</div>
+            <div class="announcements-list__announcement__info__additional">Москва, Ленинский проспект</div>
+            <div class="announcements-list__announcement__info__additional">Сегодня 14:42</div>
+          </div>
+        </div>
+
+        <div class="announcements-list__announcement">
+          <div class="announcements-list__announcement__image">
+            <img
+              alt="announcement"
+              src="./public/images/png/image-sample-1.png"
+            />
+          </div>
+
+          <div class="announcements-list__announcement__info">
+            <div class="announcements-list__announcement__info__title">Гитара Fender</div>
+            <div class="announcements-list__announcement__info__price">20 000 &#8381;</div>
+            <div class="announcements-list__announcement__info__additional">Москва, Ленинский проспект</div>
+            <div class="announcements-list__announcement__info__additional">Сегодня 14:42</div>
+          </div>
+        </div>
+
+        <div class="announcements-list__announcement">
+          <div class="announcements-list__announcement__image">
+            <img
+              alt="announcement"
+              src="./public/images/png/image-sample-2.png"
+            />
+          </div>
+
+          <div class="announcements-list__announcement__info">
+            <div class="announcements-list__announcement__info__title">Гитара Fender</div>
+            <div class="announcements-list__announcement__info__price">20 000 &#8381;</div>
+            <div class="announcements-list__announcement__info__additional">Москва, Ленинский проспект</div>
+            <div class="announcements-list__announcement__info__additional">Сегодня 14:42</div>
+          </div>
+        </div>
+
+        <div class="announcements-list__announcement">
+          <div class="announcements-list__announcement__image">
+            <img
+              alt="announcement"
+              src="./public/images/png/image-sample-1.png"
+            />
+          </div>
+
+          <div class="announcements-list__announcement__info">
+            <div class="announcements-list__announcement__info__title">Гитара Fender</div>
+            <div class="announcements-list__announcement__info__price">20 000 &#8381;</div>
+            <div class="announcements-list__announcement__info__additional">Москва, Ленинский проспект</div>
+            <div class="announcements-list__announcement__info__additional">Сегодня 14:42</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
